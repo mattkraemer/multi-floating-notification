@@ -44,7 +44,7 @@ function App() {
             alerts.length > 1 &&
               <section className="nav">
                 {
-                  activeAlert == 1 ? 
+                  activeAlert === 1 ? 
                     <button onClick={() => setActiveAlert(activeAlert-1)} disabled>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -58,7 +58,7 @@ function App() {
                     </button>
                 }
                 {
-                  activeAlert == alerts.length ?
+                  activeAlert === alerts.length ?
                     <button onClick={() => setActiveAlert(activeAlert+1)} disabled>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
