@@ -13,6 +13,9 @@
   top: 1rem;
   left: 1rem;
 }
+.add-alert:focus {
+  outline: 0;
+}
 .add-alert:hover {
   background-color: darkslategray;
 }
@@ -48,6 +51,14 @@
     display: inline-flex;
     font-size: 1.75rem;
     color: lightslategray;
+    cursor: pointer;
+  }
+  .notification header button:hover {
+    background-color: rgb(176, 196, 222, .25);
+  }
+  .notification header button:focus {
+    background-color: rgb(176, 196, 222, .25);
+    outline: 0;
   }
   .notification header button svg {
     width: 20px;
@@ -68,6 +79,13 @@
     padding: .25rem .5rem;
     display: inline-flex;
     align-items: center;
+    cursor: pointer;
+  }
+  .notification .nav button:hover {
+    background-color: rgb(176, 196, 222, .35);
+  }
+  .notification .nav button:focus {
+    outline: 0;
   }
   .notification .nav button svg {
     width: 15px;
